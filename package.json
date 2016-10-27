@@ -1,6 +1,6 @@
 {
   "name": "express-elapsed",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "simple middleware that includes elapsed time",
   "main": "index.js",
   "repository": {
