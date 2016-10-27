@@ -1,5 +1,10 @@
 language: node_js
+
 node_js:
   - "6"
   - "5"
   - "4"
+
+script: make test_cov
+
+after_script: npm install codecov && cat ./coverage/lcov.info | ./node_modules/codecov/bin/codecov
