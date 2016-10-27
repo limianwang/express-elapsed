@@ -1,5 +1,6 @@
 # express-elapsed
 
+[![Build Status](https://travis-ci.org/limianwang/express-elapsed.svg?branch=master)](https://travis-ci.org/limianwang/express-elapsed)
 
 ## Usage
 
