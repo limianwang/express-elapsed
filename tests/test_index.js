@@ -5,12 +5,12 @@ var express = require('express');
 var request = require('supertest');
 
 var expect = chai.expect;
-var elasped = require('../');
+var elapsed = require('../');
 
-describe('elasped time', function () {
-  it ('should include the elasped time', function (done) {
+describe('elapsed time', function () {
+  it ('should include the elapsed time', function (done) {
     var app = express();
-    app.use(elasped);
+    app.use(elapsed);
 
     app.use('/', function(req, res) {
         res.send({ foo: 'baz' });
@@ -21,7 +21,7 @@ describe('elasped time', function () {
       .expect(200, function(err, resp) {
         expect(resp)
           .to.have.property('body')
-          .to.have.property('elasped_time');
+          .to.have.property('elapsed_time');
 
         done();
       });

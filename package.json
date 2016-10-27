@@ -1,8 +1,12 @@
 {
   "name": "express-elapsed",
   "version": "0.1.0",
-  "description": "simple middleware that includes elasped time",
+  "description": "simple middleware that includes elapsed time",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/limianwang/express-elapsed"
+  },
   "scripts": {
     "test": "make test"
   },

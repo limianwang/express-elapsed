@@ -7,7 +7,7 @@ module.exports = function (req, res, next) {
 
   res.send = function (data) {
     if (typeof data === 'object') {
-      data.elasped_time = new Date() - start;
+      data.elapsed_time = new Date() - start;
     }
 
     _send.call(res, data);
